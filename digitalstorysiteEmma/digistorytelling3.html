@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- This is what shows at the top of your page tab! -->
+  <title>The Dev Queen</title>
+
+  <!-- Meta = information about the page itself
+      charset = encoding information for the browser to use
+      viewport = helps us with responsive web design! -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap links to help us have a responsive layout for our site -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <!-- Font Awesome Links to use Icons -->
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+  <!-- FONTS = go to https://www.w3schools.com/howto/howto_google_fonts.asp for options! -->
+  <!-- Font 1 from Google = Montserrat-->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+  <!-- Font 2 from Google = Sedgwick Ave Display -->
+  <link href='https://fonts.googleapis.com/css?family=Sedgwick%20Ave%20Display' rel='stylesheet'>
+
+  <!-- Font 3 from Google = Source Code Pro -->
+  <link href='https://fonts.googleapis.com/css?family=Source%20Code%20Pro' rel='stylesheet'>
+
+  <!-- Font 4 from Google = Staatliches -->
+  <link href='https://fonts.googleapis.com/css?family=Staatliches' rel='stylesheet'>
+
+  <!-- Our style sheet where we can customize parts of our page further -->
+  <link rel="stylesheet"  type="text/css" href="digistorytelling3.css">
+
+  <!-- Our favicon = the small icon that appears next to your page's title on the tab! -->
+  <!-- Make yours at https://www.favicon.cc/ , save it as favicon.ico in the same folder as this html document -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<!-- Th onload function called makes sure the background music is set to a lower volume when the page is loaded so it doesn't get in the way of your story -->
+<body onload="setBackgroundMusicVolume()">
+
+<!-- Audio for each page = PUT THESE IN ORDER = 1, 2, 3, 4, etc. and keep the same format for the id's name! -->
+<!-- Site to record audio = https://online-voice-recorder.com/ -->
+<audio id="page1audio">
+  <!-- Change this to your audio (voice over or music!) for Page 1! Make sure to put it in the audio folder! -->
+  <source src="audio/page1.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<audio id="page2audio">
+  <!-- Change this to your audio (voice over or music!) for Page 2! Make sure to put it in the audio folder! -->
+  <source src="audio/page2.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<audio id="page3audio">
+  <!-- Change this to your audio (voice over or music!) for Page 3! Make sure to put it in the audio folder! -->
+  <source src="audio/page3.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<audio id="page4audio">
+  <!-- Change this to your audio (voice over or music!) for Page 3! Make sure to put it in the audio folder! -->
+  <source src="audio/page4.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<audio id="page5audio">
+  <!-- Change this to your audio (voice over or music!) for Page 3! Make sure to put it in the audio folder! -->
+  <source src="audio/page5.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<audio id="page6audio">
+  <!-- Change this to your audio (voice over or music!) for Page 3! Make sure to put it in the audio folder! -->
+  <source src="audio/page6.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<audio id="page7audio">
+  <!-- Change this to your audio (voice over or music!) for Page 3! Make sure to put it in the audio folder! -->
+  <source src="audio/page7.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<audio id="page8audio">
+  <!-- Change this to your audio (voice over or music!) for Page 3! Make sure to put it in the audio folder! -->
+  <source src="audio/page8.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<audio id="page9audio">
+  <!-- Change this to your audio (voice over or music!) for Page 3! Make sure to put it in the audio folder! -->
+  <source src="audio/page9.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+
+<!-- Page Content = using Bootstrap tags -->
+<div class="container-fluid">
+  <!-- This is the top title section of the site! -->
+  <div class="row" id="storytitlesection">
+    <div class="col-sm-12 fulltitle" id="toptitle">
+      The Dev Queen
+      <br><br>
+      <!-- BACKGROUND MUSIC https://www.bensound.com/royalty-free-music -->
+      <!-- We have it so there are controls to manipulate the background music and it plays continuously! -->
+      <audio id=backgroundmusic controls loop>
+        <!-- Change this to your audio for playing in the background of your story! Make sure to put it in the audio folder! -->
+        <source src="audio/bensoundsummer.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio>
+      <br><br>
+      <p>(scroll down!)</p>
+      <i class="fa" id=scrollIcon>&#xf0a7;</i>
+    </div>
+  </div>
+
+  <!-- This is a transition image from the title page to the start of your story! It can be a pattern, gradient, drawing, etc.! -->
+  <div class="row picturesection">
+    <div class="col-sm-12 picture">
+      <!-- Replace this with your image! Make sure to change the alt text to describe your picture! -->
+      <img src="imgs/transtop.png" alt="transition picture">
+    </div>
+  </div>
+
+  <!-- PAGE 1 -->
+  <div class="row picturesection">
+    <div class="col-sm-12 picture">
+      <!-- Replace this with your image! Make sure to change the alt text to describe your picture! -->
+      <img src="imgs/page1.png" alt="< meta > on her site inspiHER">
+    </div>
+  </div>
+  <div class="row words">
+    <div class="col-sm-12">
+      <!-- These are buttons that will be used to control the play/pause state of your music/voice over for the page! -->
+      <!-- We use Font Awesome icons to show the play and pause symbols (the funky looking jumble of characters/numbers),
+      and we call functions that we give the page number to when the play or pause buttons are clicked! -->
+      <button class="listenbutton" id="playButtonPage1" onclick="playAudio(1)" type="button"><i class='far'>&#xf144;</i></button>
+      <button class="listenbutton pausebutton" id="pauseButtonPage1" onclick="pauseAudio(1)" type="button"><i  class='far'>&#xf28b;</i></button>
+      <br><br>
+      Nestled among the memorable memes, purrrrr-fection of cat videos, and Netflix documentaries about tiny houses on
+      the World Wide Web, a quaint website by the name inspiHER was hosted.
+      This website was home to a young and curious HTML tag with no true name but who went simply by <span class="metaName">< meta ></span>.
+    </div>
+  </div>
+
+  <!-- PAGE 2 -->
+  <div class="row picturesection">
+    <div class="col-sm-12 picture">
+      <!-- Replace this with your image! Make sure to change the alt text to describe your picture! -->
+      <img src="imgs/page2.png" alt="< meta > with visitor count of 10">
+    </div>
+  </div>
+  <div class="row words">
+    <div class="col-sm-12">
+      <!-- These are buttons that will be used to control the play/pause state of your music/voice over for the page! -->
+      <!-- We use Font Awesome icons to show the play and pause symbols (the funky looking jumble of characters/numbers),
+      and we call functions that we give the page number to when the play or pause buttons are clicked! -->
+      <button class="listenbutton" id="playButtonPage2" onclick="playAudio(2)" type="button"><i class='far'>&#xf144;</i></button>
+      <button class="listenbutton pausebutton" id="pauseButtonPage2" onclick="pauseAudio(2)" type="button"><i  class='far'>&#xf28b;</i></button>
+      <br><br>
+      <span class="metaName">< meta ></span> had been nameless for as long as she could remember and perpetually felt a bit like
+      she was missing something because of it. However, <span class="metaName">< meta ></span> adored life on inspiHER because she
+      got to inspire women to acquaint themselves with all the possibilities of STEM, but sometimes
+      <span class="metaName">< meta ></span> wished she would be able to reach more people.
+    </div>
+  </div>
+
+
+  <!-- PAGE 3 -->
+  <div class="row picturesection">
+    <div class="col-sm-12 picture">
+      <!-- Replace this with your image! Make sure to change the alt text to describe your picture! -->
+      <img src="imgs/page3.png" alt="Dev Queen Seo with her pet F12">
+    </div>
+  </div>
+  <div class="row words">
+    <div class="col-sm-12">
+      <!-- These are buttons that will be used to control the play/pause state of your music/voice over for the page! -->
+      <!-- We use Font Awesome icons to show the play and pause symbols (the funky looking jumble of characters/numbers),
+      and we call functions that we give the page number to when the play or pause buttons are clicked! -->
+      <button class="listenbutton" id="playButtonPage3" onclick="playAudio(3)" type="button"><i class='far'>&#xf144;</i></button>
+      <button class="listenbutton pausebutton" id="pauseButtonPage3" onclick="pauseAudio(3)" type="button"><i  class='far'>&#xf28b;</i></button>
+      <br><br>
+      One day, the Dev Queen <span class="seoName">Seo</span>, ruler of all the World Wide Web, saw a bit of herself in <span class="metaName">< meta ></span>
+      and wanted to use her collection of resources to empower less experienced novice <span class="metaName">< meta ></span>
+      because she recognized the importance for beginners to have strong, relatable role models in their tech treks.
+    </div>
+  </div>
+
+  <!-- PAGE 4 -->
+  <div class="row picturesection">
+    <div class="col-sm-12 picture">
+      <!-- Replace this with your image! Make sure to change the alt text to describe your picture! -->
+      <img src="imgs/page4.png" alt="Dev Queen Seo with her pet F12 traveling to < meta >'s site">
+    </div>
+  </div>
+  <div class="row words">
+    <div class="col-sm-12">
+      <!-- These are buttons that will be used to control the play/pause state of your music/voice over for the page! -->
+      <!-- We use Font Awesome icons to show the play and pause symbols (the funky looking jumble of characters/numbers),
+      and we call functions that we give the page number to when the play or pause buttons are clicked! -->
+      <button class="listenbutton" id="playButtonPage4" onclick="playAudio(4)" type="button"><i class='far'>&#xf144;</i></button>
+      <button class="listenbutton pausebutton" id="pauseButtonPage4" onclick="pauseAudio(4)" type="button"><i  class='far'>&#xf28b;</i></button>
+      <br><br>
+      Determined to be this positive figure in <span class="metaName">< meta ></span>’s tango with technology, <span class="seoName">Seo</span> grabbed her
+      adventure accomplice and fluffy pet, F12, and with a click of a link, the duo transported
+      to inspiHER to mentor <span class="metaName">< meta ></span>.
+    </div>
+  </div>
+
+  <!-- PAGE 5 -->
+  <div class="row picturesection">
+    <div class="col-sm-12 picture">
+      <!-- Replace this with your image! Make sure to change the alt text to describe your picture! -->
+      <img src="imgs/page5.png" alt="Dev Queen Seo with her pet F12 meeting < meta >">
+    </div>
+  </div>
+  <div class="row words">
+    <div class="col-sm-12">
+      <!-- These are buttons that will be used to control the play/pause state of your music/voice over for the page! -->
+      <!-- We use Font Awesome icons to show the play and pause symbols (the funky looking jumble of characters/numbers),
+      and we call functions that we give the page number to when the play or pause buttons are clicked! -->
+      <button class="listenbutton" id="playButtonPage5" onclick="playAudio(5)" type="button"><i class='far'>&#xf144;</i></button>
+      <button class="listenbutton pausebutton" id="pauseButtonPage5" onclick="pauseAudio(5)" type="button"><i  class='far'>&#xf28b;</i></button>
+      <br><br>
+      Upon their arrival, F12 found <span class="metaName">< meta ></span> and ran up to greet her.  “OMGeek, it’s YOU!” squealed <span class="metaName">< meta ></span>,
+      overflowing with excitement when she saw <span class="seoName">Seo</span>, “What are you guys doing here of all places?”<br><br>
+      “I have a gift for you that I hope can help you be successful. Have you ever heard of
+      Search Engine Optimization by chance?” inquired <span class="seoName">Seo</span>.  <span class="metaName">< meta ></span> shook her head no.
+    </div>
+  </div>
+
+
+  <!-- PAGE 6 -->
+  <div class="row picturesection">
+    <div class="col-sm-12 picture">
+      <!-- Replace this with your image! Make sure to change the alt text to describe your picture! -->
+      <img src="imgs/page6.png" alt="Dev Queen Seo introducing < meta > to Search Engine Optimization">
+    </div>
+  </div>
+  <div class="row words">
+    <div class="col-sm-12">
+      <!-- These are buttons that will be used to control the play/pause state of your music/voice over for the page! -->
+      <!-- We use Font Awesome icons to show the play and pause symbols (the funky looking jumble of characters/numbers),
+      and we call functions that we give the page number to when the play or pause buttons are clicked! -->
+      <button class="listenbutton" id="playButtonPage6" onclick="playAudio(6)" type="button"><i class='far'>&#xf144;</i></button>
+      <button class="listenbutton pausebutton" id="pauseButtonPage6" onclick="pauseAudio(6)" type="button"><i  class='far'>&#xf28b;</i></button>
+      <br><br>
+      “Well now we have an opportunity to learn and grow then,” smiled <span class="seoName">Seo</span>. “Search Engine Optimization
+      is a way to help increase the visibility of a website by making it easier to discover with tools
+      like Google! With it, I believe you will be able to get more visitors on inspiHER, therefore
+      increasing your positive impact.”<br><br>
+      “That sounds SPECTACULAR,” exclaimed <span class="metaName">< meta ></span>, giddy with the idea of helping more women be
+      inspired by STEM, “How do I use it?!”
+    </div>
+  </div>
+
+  <!-- PAGE 7 -->
+  <div class="row picturesection">
+    <div class="col-sm-12 picture">
+      <!-- Replace this with your image! Make sure to change the alt text to describe your picture! -->
+      <img src="imgs/page7.png" alt="Dev Queen Seo giving < meta > three names">
+    </div>
+  </div>
+  <div class="row words">
+    <div class="col-sm-12">
+      <!-- These are buttons that will be used to control the play/pause state of your music/voice over for the page! -->
+      <!-- We use Font Awesome icons to show the play and pause symbols (the funky looking jumble of characters/numbers),
+      and we call functions that we give the page number to when the play or pause buttons are clicked! -->
+      <button class="listenbutton" id="playButtonPage7" onclick="playAudio(7)" type="button"><i class='far'>&#xf144;</i></button>
+      <button class="listenbutton pausebutton" id="pauseButtonPage7" onclick="pauseAudio(7)" type="button"><i  class='far'>&#xf28b;</i></button>
+      <br><br>
+      Based on my expertise and research, I’ve identified that you seem to be missing a name,” explained
+      <span class="seoName">Seo</span>. “So today, to help you utilize Search Engine Optimization, I am going to honor you with three:
+       Description, Viewport, and Robots.”  Instantly, <span class="metaName">< meta ></span> experienced wholesomeness in a completely new way.<br><br>
+      “Description will give you the power to summarize your website’s content, Viewport will
+      allow your website to resize when needed to enhance your users’ experiences, and Robots will tell
+      search engines what to look at,” continued <span class="seoName">Seo</span>.
+    </div>
+  </div>
+
+  <!-- PAGE 8 -->
+  <div class="row picturesection">
+    <div class="col-sm-12 picture">
+      <!-- Replace this with your image! Make sure to change the alt text to describe your picture! -->
+      <img src="imgs/page8.png" alt="Dev Queen Seo with her pet F12 leaving < meta >'s site">
+    </div>
+  </div>
+  <div class="row words">
+    <div class="col-sm-12">
+      <!-- These are buttons that will be used to control the play/pause state of your music/voice over for the page! -->
+      <!-- We use Font Awesome icons to show the play and pause symbols (the funky looking jumble of characters/numbers),
+      and we call functions that we give the page number to when the play or pause buttons are clicked! -->
+      <button class="listenbutton" id="playButtonPage8" onclick="playAudio(8)" type="button"><i class='far'>&#xf144;</i></button>
+      <button class="listenbutton pausebutton" id="pauseButtonPage8" onclick="pauseAudio(8)" type="button"><i  class='far'>&#xf28b;</i></button>
+      <br><br>
+      “Thank you from my < head > to my < toes >!” beamed <span class="metaName">< meta ></span>, “I will use them strategically and never
+      forget your kindness and mentorship toward me.”<br><br>
+      <span class="seoName">Seo</span> smiled, “I wish you the best in your tech trek, and remember these three snippets of advice that have helped
+      me continue to grow: 1) Ask questions, they help you learn! 2) Always exercise your curiosity by
+      being a life-long learner and 3) Practice in hands-on ways. With that, I must get on my way again.”
+      With a click of the back button, <span class="seoName">Seo</span> and F12 vanished once again.
+    </div>
+  </div>
+
+  <!-- PAGE 9 -->
+  <div class="row picturesection">
+    <div class="col-sm-12 picture">
+      <!-- Replace this with your image! Make sure to change the alt text to describe your picture! -->
+      <img src="imgs/page9.png" alt="< meta > on her site with 1,000 visitors now">
+    </div>
+  </div>
+  <div class="row words">
+    <div class="col-sm-12">
+      <!-- These are buttons that will be used to control the play/pause state of your music/voice over for the page! -->
+      <!-- We use Font Awesome icons to show the play and pause symbols (the funky looking jumble of characters/numbers),
+      and we call functions that we give the page number to when the play or pause buttons are clicked! -->
+      <button class="listenbutton" id="playButtonPage9" onclick="playAudio(9)" type="button"><i class='far'>&#xf144;</i></button>
+      <button class="listenbutton pausebutton" id="pauseButtonPage9" onclick="pauseAudio(9)" type="button"><i  class='far'>&#xf28b;</i></button>
+      <br><br>
+      The next day,<span class="metaName">< meta ></span> woke up to a crowd of eager visitors on inspiHER, all waiting
+      enthusiastically to hear her message about the limitless possibilities and opportunities
+      in STEM for women of all backgrounds and skill levels.<br><br>
+      And so the next era of <span class="metaName">< meta ></span>’s movement of empowerment began.
+    </div>
+  </div>
+
+  <!-- Wrap up/summary section = THE END and/or a pattern to signal the end of the story-->
+  <div class="row" id="end">
+    <div class="col-sm-12 halftitle" id=endpattern>
+    </div>
+  </div>
+
+  <!-- A brief section about the author! -->
+  <div class="row">
+    <div class="col-sm-12 fulltitle" id="authorsection">
+      About Emma
+      <br><br>
+      <!-- This image is for you! Crop it to be square in proportions before using -->
+      <img src="imgs/authorpic.png" class="img-circle" id=authorpic><br><br>
+      <p>Hello, World! I am a Computer Scientist who is passionate about learning, creating, and teaching.
+      My favorite things include tea, yoga, and finding fun projects to take up!</p><br>
+    </div>
+  </div>
+
+  <!-- Thank your audience and give credit to any audio you used! -->
+  <div class="row" id="thanks">
+    <div class="col-sm-12 halftitle">
+      <i class="fas fa-cog fa-spin"></i><br><br>
+      <p>Thanks for experiencing my digi story!<br><br>
+      <em>Music Credit: Bensound.com</em></p>
+    </div>
+  </div>
+
+  </div>
+
+</div>
+
+
+<!-- This is the JavaScript code to control the sounds of the page -->
+<script>
+
+  function playAudio(pagenumber) {
+    //define all variables we will need based on the pagenumber
+    var pgnumber = pagenumber.toString();
+    var audioid = "page" + pgnumber + "audio";
+    var playbuttonid = "playButtonPage" + pgnumber;
+    var pausebuttonid = "pauseButtonPage" + pgnumber;
+
+    //Pause all audio but the background music and the current page's audio
+    //background music is the last audio element defined
+    //current page is passed in parameter
+    var sounds = document.getElementsByTagName('audio');
+    for(i=0; i<sounds.length-1; i++) {
+      if (i == pagenumber-1) //if on current page's audio's position in array
+      {
+        continue; //go to next loop iteration
+      }
+      else {
+        pauseAudio(i+1); //puase all other sounds
+      }
+    }
+
+    //define audio to play
+    var audioToPlay = document.getElementById(audioid);
+    audioToPlay.play();
+
+    //hide play button
+    document.getElementById(playbuttonid).style.display = "none";
+
+    //show pause button
+    document.getElementById(pausebuttonid).style.display = "inline";
+  }
+
+  function pauseAudio(pagenumber) {
+    //define all variables we will need based on the pagenumber
+    var pgnumber = pagenumber.toString();
+    var audioid = "page" + pgnumber + "audio";
+    var playbuttonid = "playButtonPage" + pgnumber;
+    var pausebuttonid = "pauseButtonPage" + pgnumber;
+
+    //define audio to pause
+    var audioToPause = document.getElementById(audioid);
+    audioToPause.pause();
+
+    //show play button
+    document.getElementById(playbuttonid).style.display = "inline";
+
+    //hide pause button
+    document.getElementById(pausebuttonid).style.display = "none";
+  }
+
+  function setBackgroundMusicVolume() {
+    var backgroundmusic = document.getElementById("backgroundmusic");
+    backgroundmusic.volume = 0.15;
+  }
+
+
+</script>
+
+</body>
+</html>

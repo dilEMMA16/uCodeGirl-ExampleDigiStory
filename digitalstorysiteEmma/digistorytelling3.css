@@ -1,0 +1,168 @@
+body {
+   /* default font color */
+  color: white;
+  /* default font to use */
+  /* This will be what is used for our story text! */
+  font-family: 'Montserrat';
+}
+
+/* Styles for title and author sections */
+.fulltitle {
+  font-family: 'Sedgwick Ave Display';
+  font-size: 4.4rem;
+  text-align: center;
+  background-color:#F04523;
+  min-height: 100vh;
+  padding: 20px;
+  padding-top: 15vh;
+}
+
+/* Styles for end and thanks sections */
+.halftitle {
+  font-family: 'Montserrat';
+  font-size: 3.4rem;
+  text-align: center;
+  background-color:#FABA17;
+  min-height: 50vh;
+  font-weight: bold;
+  padding: 20px;
+  padding-top: 8vh;
+}
+
+/* Font for <meta>'s name */
+.metaName {
+  font-family: 'Source Code Pro';
+  color: #a0cc36;
+  font-weight: bold;
+}
+
+/* Font for Seo's name */
+.seoName {
+  font-family: 'Staatliches';
+  font-size: large;
+  color: #cb6ce6;
+}
+
+/* Specifically controls the gradient for the title section */
+#toptitle {
+  background-color: #01b1aa;
+  background-image: linear-gradient(0deg, #01b1aa 25%, #a0cc36 100%);
+  background-color: #f04523;
+  background-image: linear-gradient(0deg, #f04523 25%, #faba17 100%);
+  /* For different gradients, go here: https://www.grabient.com/ */
+}
+
+/* Specifically controls the gradient for the end section */
+#endpattern {
+  background-color: #f04523;
+  background-image: linear-gradient(0deg, #f04523 25%, #faba17 100%);
+}
+
+/* Styles for the story text sections for each page */
+.words {
+  background-color:white;
+  height:auto;
+  min-height: 30vh;
+  color:gray;
+  padding:20px;
+  padding-top:60px;
+  padding-bottom: 60px;
+}
+
+/* Styles for the picture sections for each page */
+.picturesection {
+  background-color:lavender;
+  height: auto;
+  overflow-x: hidden;
+}
+
+/* Styles for each page's picture itself */
+.picture {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+/* Styles use for images */
+img {
+  width: 100vw;
+  height: auto;
+}
+
+/* Styles for the play/pause buttons for each page */
+.listenbutton {
+  border:none;
+  background-color:inherit;
+  color: #d3d3d3;
+  font-size:24px;
+}
+
+/* Specific styles for the author picture */
+#authorpic {
+  width: 200px;
+  height: auto;
+}
+
+/* Specific styles for the author section */
+#authorsection {
+  padding-top: 15vh;
+}
+
+/* Styles for any text in a paragraph tag */
+p {
+  font-size: 0.5em;
+  font-family: 'Montserrat';
+
+}
+
+/* to set initial display of pause buttons to none */
+.pausebutton {
+  display: none;
+}
+
+/* Specific styles for the scroll icon */
+#scrollIcon {
+position: relative;
+font-size:70px;
+-webkit-animation-name: dance; /* Safari 4.0 - 8.0 */
+-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+-webkit-animation-delay: 0s; /* Safari 4.0 - 8.0 */
+animation-name: dance;
+animation-duration: 3s;
+animation-delay: 0s;
+animation-iteration-count: infinite;
+}
+
+/* Provides animation for scroll icon to sway side to side! */
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes dance {
+
+0%  {   -ms-transform: rotate(-7deg); /* IE 9 */
+-webkit-transform: rotate(-7deg); /* Safari 3-8 */
+ transform: rotate(-7deg);}
+33%  {  -ms-transform: rotate(7deg); /* IE 9 */
+ -webkit-transform: rotate(7deg); /* Safari 3-8 */
+ transform: rotate(7deg);}
+66%  {  -ms-transform: rotate(7deg); /* IE 9 */
+ -webkit-transform: rotate(7deg); /* Safari 3-8 */
+ transform: rotate(7deg);}
+100% {  -ms-transform: rotate(-7deg); /* IE 9 */
+ -webkit-transform: rotate(-7deg); /* Safari 3-8 */
+ transform: rotate(-7deg);}}
+}
+
+/* Standard syntax */
+@keyframes dance {
+
+0%  {   -ms-transform: rotate(-7deg); /* IE 9 */
+ -webkit-transform: rotate(-7deg); /* Safari 3-8 */
+ transform: rotate(-7deg);}
+33%  {  -ms-transform: rotate(7deg); /* IE 9 */
+ -webkit-transform: rotate(7deg); /* Safari 3-8 */
+ transform: rotate(7deg);}
+66%  {  -ms-transform: rotate(7deg); /* IE 9 */
+ -webkit-transform: rotate(7deg); /* Safari 3-8 */
+ transform: rotate(7deg);}
+100% {  -ms-transform: rotate(-7deg); /* IE 9 */
+ -webkit-transform: rotate(-7deg); /* Safari 3-8 */
+ transform: rotate(-7deg);}}
+}
